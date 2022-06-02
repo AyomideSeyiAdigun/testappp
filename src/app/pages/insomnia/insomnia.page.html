@@ -1,0 +1,11 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title> Insomnia Service </ion-card-title>
+    <ion-card-subtitle>Kindly toggle the button to keep the screen awake</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-label color="dark">{{ isOnline ? 'Sleep' : 'Keep Awake' }}</ion-label>
+  <ion-toggle (ionChange)="updateDriverOnlineStatus($event)" [checked]="isOnline"></ion-toggle>
+  </ion-card-content>
+</ion-card>
